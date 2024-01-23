@@ -2,7 +2,7 @@
 const url = "https://api.github.com/users/";
 const input = document.getElementById("input");
 const search = document.getElementById("search");
-
+const user_avataar = document.getElementById("user_avataar")
 
 search.addEventListener('click' , ()=>{
     
@@ -17,6 +17,7 @@ async function getUserData(newUrl){
         const res = await fetch(newUrl);
         const data = await res.json();
         console.log(data);
+        renderUserInfo(data);
 
     }
 
@@ -25,5 +26,10 @@ async function getUserData(newUrl){
         console.log('Error in fetching the data');
 
     }
+}
+
+function renderUserInfo(userData){
+
+    user_avataar.src = `${userData.avatar_url}`;
 }
 
