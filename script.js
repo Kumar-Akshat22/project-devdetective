@@ -53,7 +53,7 @@ function renderUserInfo(userData){
     user_company.innerText = (userData.company === null) ? "Not Available" : `${userData.comapny}`;
     user_twitter.innerText = (userData.twitter_username === null) ? "Not Available" : `${userData.twitter_username}`;
     user_twitter.href = (userData.twitter_username === null) ? "#" : `https://twitter.com/${userData.twitter_username}`;
-    user_website.innerText = (userData.blog === null) ? "Not Available" : `${userData.blog}`;
+    user_website.innerText = (userData.blog === "") ? "Not Available" : `${userData.blog}`;
     user_website.href = (userData.blog === null) ? "#" : `https://${userData.blog}`;
     
 
