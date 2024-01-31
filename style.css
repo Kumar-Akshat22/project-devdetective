@@ -24,5 +24,23 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    font-family: "Space Mono", monospace;
+    
+}
+
+.container{
+
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.header{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
