@@ -44,3 +44,22 @@
     display: flex;
     justify-content: space-between;
 }
+
+.header h1{
+
+    font-size: 1.7rem;
+}
+
+#theme-toggle{
+
+    width: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 2.5px;
+}
+
+#theme-value{
+
+    text-transform: uppercase;
+}
