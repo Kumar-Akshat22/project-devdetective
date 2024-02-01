@@ -59,3 +59,6 @@ function renderUserInfo(userData){
 
 }
 
+// Initialize the profile info card with some inital value
+const initial_userdata = 'thepranaygupta';
+getUserData(url+initial_userdata);
