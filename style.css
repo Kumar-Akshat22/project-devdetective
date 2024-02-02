@@ -229,3 +229,19 @@
     font-weight: bold;
 }
 
+#other-info{
+
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    margin-left: 20px;
+    
+}
+
+.other-info-content{
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
