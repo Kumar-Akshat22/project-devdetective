@@ -191,5 +191,41 @@
 #user_description{
 
     margin-top: 12px;
+    line-height: 25px;
+    opacity: 0.75;
+    color: var(--lm-text);
 
 }
+
+.stats-container{
+
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 69px;
+    background-color: var(--lm-bg);
+    border-radius: 15px;
+    padding: 1.4rem 2rem;
+
+}
+
+#stats-content{
+
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+#stats-heading{
+
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--lm-text);
+}
+
+.stat-value{
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
