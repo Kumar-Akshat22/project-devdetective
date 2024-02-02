@@ -44,7 +44,7 @@ function renderUserInfo(userData){
     user_avataar.src = `${userData.avatar_url}`;
     user_name.innerText = `${userData.name}`;
     user_profile.href = `${userData.html_url}`;
-    user_profile.innerText = `${userData.login}`;
+    user_profile.innerText = `@${userData.login}`;
     user_description.innerText = `${userData.bio}`;
     repo_count.innerText = `${userData.public_repos}`;
     follower_count.innerText = `${userData.followers}`;
