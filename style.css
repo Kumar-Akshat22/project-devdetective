@@ -7,20 +7,21 @@
 
 :root{
 
+    /* Light Mode configurations */
     --lm-bg: #f6f8ff;
     --lm-bg-content: #fefefe;
     --lm-text: #4b6a9b;
     --lm-text-alt: #2b3442;
     --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
     --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
-    --lm-icon-bg: brightness(100%);
-
+    --lm-icon-bg: #4b6a9b;
+    
     /* Button */
     --btn: #0079ff;
     --btn-hover: #60abff;
 }
 
-#wrapper{
+.wrapper{
 
     width: 100vw;
     height: 100vh;
@@ -59,7 +60,8 @@
     align-items: center;
     justify-content: space-between;
     letter-spacing: 2.5px;
-    
+    cursor: pointer;
+    user-select: none;
 }
 
 #theme-value{
@@ -245,4 +247,17 @@
     align-items: center;
     gap: 15px;
     color: var(--lm-text);
+}
+
+.description{
+
+    all: unset;
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+.icons{
+
+    filter: var(--lm-icon-bg);
 }

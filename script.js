@@ -51,6 +51,7 @@ function darkMode(){
     root.setProperty('--lm-bg-content' , '#1E2A47');
     root.setProperty('--lm-text' , 'white');
     root.setProperty('--lm-text-alt' , 'white');
+    root.setProperty(' --lm-icon-bg' , 'white');
 
 }
 
@@ -62,7 +63,7 @@ function lightMode(){
     root.setProperty('--lm-bg-content', '#fefefe');
     root.setProperty('--lm-text' , '#4b6a9b');
     root.setProperty('--lm-text-alt' , '#2b3442');
-
+    root.setProperty(' --lm-icon-bg' , '#4b6a9b');
 }
 
 async function getUserData(newUrl){
@@ -94,7 +95,7 @@ function renderUserInfo(userData){
     follower_count.innerText = `${userData.followers}`;
     following_count.innerText = `${userData.following}`;
     user_location.innerText = (userData.location === null) ? "Not Available" : `${userData.location}`;
-    user_company.innerText = (userData.company === null) ? "Not Available" : `${userData.comapny}`;
+    user_company.innerText = (userData.company === null) ? "Not Available" : `${userData.company}`;
     user_twitter.innerText = (userData.twitter_username === null) ? "Not Available" : `${userData.twitter_username}`;
     user_twitter.href = (userData.twitter_username === null) ? "#" : `https://twitter.com/${userData.twitter_username}`;
     user_website.innerText = (userData.blog === "") ? "Not Available" : `${userData.blog}`;
