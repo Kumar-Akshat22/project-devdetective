@@ -21,9 +21,7 @@
     --btn-hover: #60abff;
 }
 
-.wrapper{
-
-    width: 100vw;
+body{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -32,7 +30,7 @@
 
 .container{
 
-    width: 700px;
+    width: 327px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -42,7 +40,7 @@
 
 .header{
 
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     color:var(--lm-text);
@@ -55,7 +53,7 @@
 
 #theme-toggle{
 
-    width: 92px;
+    /* width: 92px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -153,10 +151,11 @@
 .profile-content{
 
     display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
-    
-    
+}
+
+.profile-header{
+
+    display: flex;
 }
 
 #user_avataar{
@@ -174,9 +173,7 @@
 
 #name-date{
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;  
 }
 
 #date_joined{
@@ -270,4 +267,45 @@
 .icons{
 
     filter: var(--lm-icon-bg);
+}
+
+
+@media screen and (max-width:1280px) {
+
+    .container{
+
+        width: 573px;
+    }
+
+    .profile-content{
+        flex-direction: column;
+    }
+
+    #name-date{
+
+        flex-direction: column;
+        gap: 2px;
+    }
+    
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+
+    .container{
+
+        width: 720px;
+    }
+
+    #name-date{
+
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .profile-content{
+
+        flex-direction: row;
+        gap: 40px;
+    }
 }
