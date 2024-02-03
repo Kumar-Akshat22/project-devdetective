@@ -21,6 +21,7 @@ const theme_value = document.getElementById("theme-value");
 const theme_icon = document.getElementById("theme-icon");
 const search_container = document.querySelector(".search-container");
 const profile_container = document.querySelector(".profile-container");
+const month_array = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
 
 
 search.addEventListener('click' , ()=>{
@@ -86,6 +87,14 @@ async function getUserData(newUrl){
 
 function renderUserInfo(userData){
 
+    const dateJoined = userData.created_at.split('T').shift().split("-");
+    // Year Extracted
+    console.log(dateJoined[0]);
+    // Month Extracted
+    console.log(dateJoined[1]);
+    // Date Extracted
+    console.log(dateJoined[2]);
+    date_joined.innerText = `Joined ${dateJoined[2]} ${month_array[dateJoined[1]-1]} ${dateJoined[0]}`
     user_avataar.src = `${userData.avatar_url}`;
     user_name.innerText = `${userData.name}`;
     user_profile.href = `${userData.html_url}`;
