@@ -1,4 +1,6 @@
 // Varialbles
+const wrapper = document.querySelector(".wrapper");
+const root = document.documentElement.style;
 const url = "https://api.github.com/users/";
 const input = document.getElementById("input");
 const search = document.getElementById("search");
@@ -14,12 +16,54 @@ const user_location = document.getElementById("user_location");
 const user_website = document.getElementById("user_website");
 const user_twitter = document.getElementById("user_twitter");
 const user_company = document.getElementById("user_company");
+const toggle_theme = document.getElementById("theme-toggle");
+const theme_value = document.getElementById("theme-value");
+const theme_icon = document.getElementById("theme-icon");
+const search_container = document.querySelector(".search-container");
+const profile_container = document.querySelector(".profile-container");
+
 
 search.addEventListener('click' , ()=>{
     
     console.log('Printing the search input value');
     getUserData(url + input.value);
-})
+});
+
+toggle_theme.addEventListener("click" , ()=>{
+
+    console.log('Toggle theme event listener called');
+    console.log(theme_value.innerText);
+
+    theme_value.innerText==='DARK' 
+    ? 
+    (darkMode())
+    :
+    (lightMode())
+
+
+});
+
+function darkMode(){
+
+    theme_value.innerText = `${'LIGHT'}`;
+    theme_icon.src = './assets/images/sun-icon.svg';
+    root.setProperty('--lm-bg' , '#141D2F');
+    root.setProperty('--lm-bg-content' , '#1E2A47');
+    root.setProperty('--lm-text' , 'white');
+    root.setProperty('--lm-text-alt' , 'white');
+
+}
+
+function lightMode(){
+
+    theme_value.innerText = `${'DARK'}`;
+    theme_icon.src = './assets/images/moon-icon.svg';
+    root.setProperty('--lm-bg' , '#f6f8ff');
+    root.setProperty('--lm-bg-content', '#fefefe');
+    root.setProperty('--lm-text' , '#4b6a9b');
+    root.setProperty('--lm-text-alt' , '#2b3442');
+
+}
 
 async function getUserData(newUrl){
 
