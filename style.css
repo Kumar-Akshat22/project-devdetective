@@ -26,6 +26,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: var(--lm-bg);
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .container{
@@ -56,7 +57,7 @@ body{
     /* width: 92px; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
     letter-spacing: 2.5px;
     cursor: pointer;
     user-select: none;
@@ -80,6 +81,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.3s ease-in-out 0s;
     
 }
 
@@ -146,6 +148,7 @@ body{
     box-shadow: var(--lm-shadow);
     border-radius: 15px;
     padding: 1.75rem 1.725rem;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .profile-content{
@@ -214,6 +217,7 @@ body{
     background-color: var(--lm-bg);
     border-radius: 15px;
     padding: 1.4rem 2rem;
+    transition: all 0.3s ease-in-out 0s;
 
 }
 
