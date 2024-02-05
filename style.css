@@ -78,15 +78,12 @@ body{
     padding: 6px;
     /* height: 100%; */
     display: flex;
+    justify-content: space-between;
     align-items: center;
     transition: all 0.3s ease-in-out 0s;
     
 }
 
-.search-icon-container{
-
-    
-}
 #search-icon{
 
     height: 20px;
@@ -296,7 +293,25 @@ body{
 
     .container{
 
-        width: 720px;
+        width: 700px;
+    }
+
+    .search-container{
+
+        display: flex;
+        
+    }
+
+    #input{
+
+        width: 80%;
+        margin-left: 42px;
+
+    }
+
+    #input::placeholder{
+
+        font-size: 17px;
     }
 
     #name-date{
@@ -304,10 +319,5 @@ body{
         align-items: center;
         justify-content: space-between;
     }
-    
-    .profile-content{
 
-        flex-direction: row;
-        gap: 40px;
-    }
 }
