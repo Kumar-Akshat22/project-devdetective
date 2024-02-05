@@ -27,6 +27,7 @@ body{
     justify-content: center;
     background-color: var(--lm-bg);
     transition: all 0.3s ease-in-out 0s;
+    user-select: none;
 }
 
 .container{
@@ -35,8 +36,8 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2.5rem;
+    justify-content: center;            
+    gap: 1.6rem;
 }
 
 .header{
@@ -45,11 +46,12 @@ body{
     display: flex;
     justify-content: space-between;
     color:var(--lm-text);
+    margin-top: 100px;
 }
 
 .header h1{
 
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 #theme-toggle{
@@ -57,16 +59,17 @@ body{
     /* width: 92px; */
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    letter-spacing: 2.5px;
+    /* gap: 0.5rem; */
+    /* letter-spacing: 2.5px; */
     cursor: pointer;
     user-select: none;
+    margin-right: 10px;
+    
 }
 
 #theme-value{
 
-    text-transform: uppercase;
-    
+    display: none;
 }
 
 .search-container{
@@ -146,6 +149,7 @@ body{
     border-radius: 15px;
     padding: 1.75rem 1.725rem;
     transition: all 0.3s ease-in-out 0s;
+    margin-bottom: 90px;
 }
 
 .profile-content{
@@ -268,7 +272,7 @@ body{
     filter: var(--lm-icon-bg);
 }
 
-
+/* Tablet Screen */
 @media screen and (min-width:768px) and (max-width:1280px){
 
     .container{
@@ -280,12 +284,56 @@ body{
         flex-direction: column;
     }
 
-    #name-date{
+    .search-container{
+    }
+
+    #input{
+
+        width: 80%;
+        margin-left: 42px;
+
+    }
+
+    #input::placeholder{
+
+        font-size: 17px;
+    }
+
+    #user_avataar{
+
+        width: 110px;
+
+    }
+
+    .name-uname-doj{
 
         flex-direction: column;
-        gap: 2px;
     }
-    
+
+    #user_name{
+
+        font-size: 27px;
+    }
+
+    #user_profile{
+
+
+    }
+
+    #date_joined{
+
+        margin-top: 0;
+    }
+
+    #user_description{
+
+        font-size: 17px;
+    }
+
+    #stats-heading{
+        font-size: 17px;
+
+    }
 }
 
 /* Desktop */
