@@ -357,5 +357,11 @@ body{
     #user_description{
 
         margin-left: 22px;
+        font-size: 16px;
+    }
+
+    .stats-container{
+
+        margin-left: 12px;
     }
 }
