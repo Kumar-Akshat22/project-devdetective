@@ -31,7 +31,7 @@ body{
 
 .container{
 
-    width: 327px;
+    width: 362px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -77,14 +77,16 @@ body{
     box-shadow: var(--lm-shadow);
     padding: 6px;
     /* height: 100%; */
-    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     transition: all 0.3s ease-in-out 0s;
     
 }
 
+.search-icon-container{
+
+    
+}
 #search-icon{
 
     height: 20px;
@@ -92,32 +94,32 @@ body{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 12px;
+    left: 2%;
     
 }
 
 #input{
 
     border: none;
-    width: 70%;
     color: var(--lm-text);
     outline: none;
     background: none;
-    padding-right: 50px;
+    margin-left: 32px;
+    padding-right: 16px;
     font-size: 17px;
+    
 }
 
 #input::placeholder{
 
     color: var(--lm-text);
-    font-size: 17px;
+    font-size: 13px;
     font-family: "Space Mono", monospace;
-    margin-left: 15px;
 }
 
 #search{
 
-    min-width: 84px;
+    min-width: 44px;
     padding: 15px 22px;
     background-color: var(--btn);
     border: none;
@@ -142,8 +144,6 @@ body{
 .profile-container{
 
     width: 100%;
-    display: flex;
-    justify-content: center;
     background-color: var(--lm-bg-content);
     box-shadow: var(--lm-shadow);
     border-radius: 15px;
@@ -154,53 +154,51 @@ body{
 .profile-content{
 
     display: flex;
+    flex-direction: column;
 }
 
 .profile-header{
 
     display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 #user_avataar{
 
-    width: 117px;
+    width: 80px;
     border-radius: 90px;
 }
 
-.profile-info{
+.name-uname-doj{
 
-    width: 95%;
     display: flex;
     flex-direction: column;
-}
-
-#name-date{
-
-    display: flex;  
-}
-
-#date_joined{
-
-    color: var(--lm-text);
+    gap: 0.4rem;
 }
 
 #user_name{
 
-    font-size: 26px;
+    font-size: 17px;
     font-weight: bold;
     color: var(--lm-text-alt);
 }
 
 #user_profile{
 
-    margin-top: 12px;
     color: var(--btn);
+}
 
+#date_joined{
 
+    font-size: 15px;
+    color: var(--lm-text);
 }
 
 #user_description{
 
+    font-size: 15px;
     margin-top: 12px;
     line-height: 25px;
     opacity: 0.75;
@@ -212,8 +210,8 @@ body{
 
     margin-top: 32px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 69px;
     background-color: var(--lm-bg);
     border-radius: 15px;
     padding: 1.4rem 2rem;
@@ -225,19 +223,19 @@ body{
 
     display: flex;
     flex-direction: column;
-    gap: 11px;
+    gap: 9px;
 }
 
 #stats-heading{
 
-    font-size: 14px;
+    font-size: 12px;
     font-weight: lighter;
     color: var(--lm-text);
 }
 
 .stat-value{
 
-    font-size: 22px;
+    font-size: 19px;
     font-weight: bold;
     color: var(--lm-text-alt);
 }
@@ -274,7 +272,7 @@ body{
 }
 
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:768px) and (max-width:1280px){
 
     .container{
 

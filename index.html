@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,151 +15,160 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
 
-        <!-- Container Div -->
-        <div class="container">
 
-            <!-- Heading div -->
-            <div class="header">
-                <h1>DevDetective</h1>
-                
-                <!-- Light & Dark theme toggle button -->
-                <div id="theme-toggle">
-                    <!-- Text - Light or Dark -->
-                    <span id="theme-value">Dark</span>
-                    <!-- Icon - Sun or Moon -->
-                    <img src="./assets/images/moon-icon.svg" id="theme-icon"></img>
+    <!-- Container Div -->
+    <div class="container">
 
-                </div>
+        <!-- Heading div -->
+        <div class="header">
+            <h1>DevDetective</h1>
+
+            <!-- Light & Dark theme toggle button -->
+            <div id="theme-toggle">
+                <!-- Text - Light or Dark -->
+                <span id="theme-value">Dark</span>
+                <!-- Icon - Sun or Moon -->
+                <img src="./assets/images/moon-icon.svg" id="theme-icon"></img>
+
+            </div>
+        </div>
+
+        <!-- SearchBar div -->
+        <div class="search-container">
+            <div class="search-icon-container">
+
+                <img src="./assets/images/search-icon.svg" id="search-icon"></img>
+            </div>  
+
+                <input type="search" placeholder="Enter a GitHub username..." id="input">
+            
+
+            <div>
+
+                <button id="search">Search</button>
             </div>
 
-            <!-- SearchBar div -->
-            <div class="search-container">
-                    <div>
 
-                        <img src="./assets/images/search-icon.svg" id="search-icon"></img>
-                    </div>
-                    
-                    <input type="search" placeholder="Enter a GitHub username..." id="input">
-                    <button id="search">Search</button>
+        </div>
 
-                
-            </div>
+        <!-- Profile Information div -->
+        <div class="profile-container">
+            <div class="profile-content">
 
-            <!-- Profile Information div -->
-            <div class="profile-container">
-                <div class="profile-content">
+                <div class="profile-header">
+
                     <!-- Avataar div -->
                     <div>
                         <img src="" id="user_avataar">
                     </div>
 
-                    <!-- Name & Stats div -->
-                    <div class="profile-info">
-                        
-                        <!-- Name & Date Joined -->
-                        <div id="name-date">
-
-                            <!-- Name -->
-                            <div>
-                                <h2 id="user_name"></h2>
-                            </div>
-                            
-                            <!-- Date Joined -->
-                            <div>
-
-                                <p id="date_joined"></p>
-
-                            </div>
-
-                        </div>
-
-                        <!-- GitHub Username -->
+                    <!-- Name, username and Date Joined -->
+                    <div class="name-uname-doj">
+                        <!-- Name & Username-->
                         <div>
-                            <a href="" id="user_profile" target="_blank" rel="noopener noreferrer"></a>
+                            <h2 id="user_name"></h2>
+                            <!-- GitHub Username -->
+                            <div>
+                                <a href="" id="user_profile" target="_blank" rel="noopener noreferrer"></a>
+                            </div>
                         </div>
 
-                        <!-- Description -->
+                        <!-- Date Joined -->
                         <div>
-                            <p id="user_description"></p>
-                        </div>
 
-                        <!-- Stats Card -->
-                        <div class="stats-container">
+                            <p id="date_joined"></p>
 
-                            <!-- No of Repos -->
-                            <div id="stats-content">
-                                <div>
-                                    <p id="stats-heading">Repos</p>
-                                </div>
-                                <div>
-                                    <p id="repo_count" class="stat-value"></p>
-                                </div>
-                            </div>
-
-                            <!-- No of Followers -->
-                            <div id="stats-content">
-
-                                <div>
-                                    <p id="stats-heading">Followers</p>
-                                </div>
-
-                                <div>
-                                    <p id="follower_count" class="stat-value"></p>
-                                </div>
-                            </div>
-
-                            <!-- Following Count -->
-                            <div id="stats-content">
-                                <div>
-                                    <p id="stats-heading">Following</p>
-                                </div>
-
-                                <div>
-                                    <p id="following_count" class="stat-value"></p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Other Info -->
-                        <div id="other-info">
-                            <div class="other-info-content">
-                                <img src="./assets/images/location-icon.svg">
-                                <span id="user_location" class="other-info-icons"></span>
-                            </div>
-
-                            <div class="other-info-content">
-                                <img src="./assets/images/website-icon.svg" alt="">
-                                <div>
-
-                                    <a href="" target="_blank" rel="noopener noreferrer" id="user_website"  class="description"></a><span></span></a>
-                                </div>
-                            </div>
-
-                            <div class="other-info-content">
-                                <img src="./assets/images/twitter-icon.svg">
-                                <div>
-
-                                    <a href="" target="_blank" rel="noopener noreferrer" id="user_twitter"  class="description"></a><span></span></a>
-                                </div>
-                            </div>
-
-                            <div class="other-info-content">
-                                <img src="./assets/images/company-icon.svg">
-                                <span id="user_company"></span>
-                            </div>
                         </div>
 
                     </div>
+
                 </div>
+
+                <!-- User Description -->
+                <div>
+                    <p id="user_description"></p>
+                </div>
+
+                <!-- Stats Card -->
+                <div class="stats-container">
+
+                    <!-- No of Repos -->
+                    <div id="stats-content">
+                        <div>
+                            <p id="stats-heading">Repos</p>
+                        </div>
+                        <div>
+                            <p id="repo_count" class="stat-value"></p>
+                        </div>
+                    </div>
+
+                    <!-- No of Followers -->
+                    <div id="stats-content">
+
+                        <div>
+                            <p id="stats-heading">Followers</p>
+                        </div>
+
+                        <div>
+                            <p id="follower_count" class="stat-value"></p>
+                        </div>
+                    </div>
+
+                    <!-- Following Count -->
+                    <div id="stats-content">
+                        <div>
+                            <p id="stats-heading">Following</p>
+                        </div>
+
+                        <div>
+                            <p id="following_count" class="stat-value"></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Other Info -->
+                <div id="other-info">
+                    <div class="other-info-content">
+                        <img src="./assets/images/location-icon.svg">
+                        <span id="user_location" class="other-info-icons"></span>
+                    </div>
+
+                    <div class="other-info-content">
+                        <img src="./assets/images/website-icon.svg" alt="">
+                        <div>
+
+                            <a href="" target="_blank" rel="noopener noreferrer" id="user_website"
+                                class="description"></a><span></span></a>
+                        </div>
+                    </div>
+
+                    <div class="other-info-content">
+                        <img src="./assets/images/twitter-icon.svg">
+                        <div>
+
+                            <a href="" target="_blank" rel="noopener noreferrer" id="user_twitter"
+                                class="description"></a><span></span></a>
+                        </div>
+                    </div>
+
+                    <div class="other-info-content">
+                        <img src="./assets/images/company-icon.svg">
+                        <span id="user_company"></span>
+                    </div>
+                </div>
+
+
             </div>
         </div>
+    </div>
 
-    
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
