@@ -48,6 +48,7 @@ function darkMode(){
 
     theme_value.innerText = `${'LIGHT'}`;
     theme_icon.src = './assets/images/sun-icon.svg';
+    theme_icon.style.transition = "all 0.3s ease-in-out"
     root.setProperty('--lm-bg' , '#141D2F');
     root.setProperty('--lm-bg-content' , '#1E2A47');
     root.setProperty('--lm-text' , 'white');

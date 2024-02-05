@@ -57,7 +57,7 @@ body{
     /* width: 92px; */
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     letter-spacing: 2.5px;
     cursor: pointer;
     user-select: none;
