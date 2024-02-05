@@ -314,10 +314,48 @@ body{
         font-size: 17px;
     }
 
-    #name-date{
+    .profile-container{
 
-        align-items: center;
+        position: relative;
+    }
+
+    .profile-content{
+
+        width: 492px;
+        margin-left: auto;
+
+    }
+    .profile-header{
+        flex-direction: row;
         justify-content: space-between;
     }
 
+    #user_avataar{
+        position: absolute;
+        width: 120px;
+        left: 25px;
+    }
+
+    .name-uname-doj{
+
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #user_name{
+
+        font-size: 27px;
+    }
+
+    #date_joined{
+
+        margin-top: 12px;
+    }
+
+    #user_description{
+
+        margin-left: 22px;
+    }
 }
