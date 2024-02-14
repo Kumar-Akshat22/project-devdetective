@@ -21,6 +21,7 @@ const theme_value = document.getElementById("theme-value");
 const theme_icon = document.getElementById("theme-icon");
 const search_container = document.querySelector(".search-container");
 const profile_container = document.querySelector(".profile-container");
+const error_container = document.getElementById("error-message");
 const month_array = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
 
 
@@ -73,9 +74,21 @@ async function getUserData(newUrl){
     try{
 
         const res = await fetch(newUrl);
-        const data = await res.json();
-        console.log(data);
-        renderUserInfo(data);
+
+        if(res.ok){
+
+            const data = await res.json();
+            console.log(data);
+            renderUserInfo(data);
+
+        }
+
+        else{
+
+            error_container.classList.add("active");
+
+
+        }
 
     }
 
