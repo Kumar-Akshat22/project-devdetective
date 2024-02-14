@@ -358,9 +358,17 @@ body{
         
     }
 
-    #input{
+    .input-error-container{
 
         width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #input{
+
+        width: 70%;
         margin-left: 42px;
 
     }
