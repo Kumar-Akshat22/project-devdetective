@@ -284,8 +284,7 @@ body{
         flex-direction: column;
     }
 
-    .search-container{
-    }
+    
 
     #input{
 
@@ -315,10 +314,6 @@ body{
         font-size: 27px;
     }
 
-    #user_profile{
-
-
-    }
 
     #date_joined{
 
