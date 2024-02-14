@@ -275,7 +275,7 @@ body{
 #error-message{
 
     color: red;
-    font-size: small;
+    font-size: 15px;
     font-weight: bold;
     display: none;
 }
