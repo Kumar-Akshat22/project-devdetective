@@ -28,7 +28,19 @@ const month_array = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct
 search.addEventListener('click' , ()=>{
     
     console.log('Printing the search input value');
-    getUserData(url + input.value);
+
+    if(input.value===""){
+        
+        error_container.innerText = 'Please enter a user';
+        error_container.classList.add('active');
+
+    }
+
+    else{   
+        error_container.classList.remove('active');
+        error_container.innerText = 'No user Found';
+        getUserData(url + input.value);
+    }
 });
 
 toggle_theme.addEventListener("click" , ()=>{
