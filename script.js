@@ -71,6 +71,7 @@ function lightMode(){
 
 async function getUserData(newUrl){
 
+    error_container.classList.remove("active");
     try{
 
         const res = await fetch(newUrl);
@@ -86,8 +87,6 @@ async function getUserData(newUrl){
         else{
 
             error_container.classList.add("active");
-
-
         }
 
     }
@@ -98,6 +97,11 @@ async function getUserData(newUrl){
 
     }
 }
+
+input.addEventListener("change",()=>{
+
+    error_container.classList.remove("active");
+})
 
 function renderUserInfo(userData){
 
