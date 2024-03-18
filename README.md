@@ -20,3 +20,29 @@ https://project-devdetective.vercel.app/
 
 ![Tech Stack Icons](https://skillicons.dev/icons?i=html,css,javascript)
 
+
+## Screenshots
+
+![App Screenshot](https://github.com/Kumar-Akshat22/project-devdetective/blob/main/assets/Screenshot-1.png)
+
+![App Screenshot](https://github.com/Kumar-Akshat22/project-devdetective/blob/main/assets/Screenshot-2.png)
+
+
+## API Reference
+
+#### Fetch details of the users 
+
+```http
+  https://api.github.com/users
+```
+
+
+
+## Lessons Learned
+
+- I learnt more about API handling in a much better way. I also leart about fetching different types of user's data.
+
+- I learnt how to implement the light and dark mode toggle button.
+
+- My understanding about code for making website responsive was imporved a lot. 
+
