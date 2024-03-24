@@ -33,7 +33,7 @@ https://project-devdetective.vercel.app/
 #### Fetch details of the users 
 
 ```http
-  https://api.github.com/users
+  https://api.github.com/users/username
 ```
 
 
